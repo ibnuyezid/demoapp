@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fronted </title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Remember  <span>that</span> </a>
+
+            <img id="mobile-cta" class="mobile-menu" src="ima/list-menu.svg" alt="open navigations">
+            <nav >
+                <img id="mobile-exit" class="mobile-menu-exit" src="ima/close.svg" alt="close navigations">
+                <ul class="primary-nav">
+                    
+                    <li> <a href="#" class="current"> Home </a></li>
+                    <li> <a href="#"> Features </a></li>
+                    <li> <a href="#"> pricing </a></li>
+                </ul>
+                <ul class="secondary-nav">
+                     
+                    <li> <a href="#"> contact </a></li>
+                    <li class="go-premium-cta"> <a href="#" > Go premium </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's nitty &amp; Gritty</p>
+                <h1>A task app that Doesn't Stink</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For Free</a>
+                    <a href="#" class="watch-video-cta">
+                         <img src="ima/watch.svg" alt="watch video"> watch a video</a>
+                </div>
+            </div>
+            <img src="ima/illustration.svg" class="hero-img" alt="illustration">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminder</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social media anouncement</li>
+                <li>Real Time Collabrations</li>
+                <li>other Awesome Features</li>
+                 
+            </ul>
+            <img src="ima/phone-hand.jpg" alt="man holding phone">
+        </div>
+    </section>
+    <section class="testimonial-section">
+        <div class="container">
+            <ul>
+                <li><img src="ima/person.jpg" alt="person">
+                <blockquote>It's a very good website begining from the interface to services almost i like every thing</blockquote>
+                <cite>-Jone Doe</cite>
+            </li>
+               
+          
+                <li><img src="ima/person.jpg" alt="person">
+                <blockquote>It's a very good website begining from the interface to services almost i like every thing</blockquote>
+                <cite>-Jone Doe</cite>
+            </li>
+              
+                <li><img src="ima/person.jpg" alt="person">
+                <blockquote>It's a very good website begining from the interface to services almost i like every thing</blockquote>
+                <cite>-Jone Doe</cite>
+            </li>
+            </ul>
+             
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <!-- <label for="Email">Email</label>
+                    <input type="Email" id="name" name="Email"> -->
+                    <label for="message">message</label>
+                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                     <input type="submit" class="send-message-cta" value="send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63052.6064460278!2d38.71758273124999!3d8.991654700000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b84e2bd27b873%3A0x2c22f2942294d86a!2sZalaTech%20-%20Website%20Design%2C%20Software%20Development%2C%20ERP%20System%20Implementation%20Solution%20Provider%20In%20Ethiopia!5e0!3m2!1sam!2set!4v1656743364668!5m2!1sam!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobilebtn=document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileexit = document.getElementById('mobile-exit');
+        mobilebtn.addEventListener('click', ()=>{
+            nav.classList.add('menu-btn');
+        })
+        mobileexit.addEventListener('click', ()=>{
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
